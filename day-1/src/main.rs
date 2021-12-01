@@ -17,7 +17,7 @@ fn main() {
 }
 
 fn windowed_depth_increases(depths: &Vec<i32>, size: usize) -> usize {
-    let windowed: Vec<i32> = depths
+    let windowed = depths
         .windows(size)
         .into_iter()
         .map(|x| x.iter().sum())
